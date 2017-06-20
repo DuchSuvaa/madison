@@ -1,3 +1,6 @@
+.visible {
+  display: flex !important; }
+
 h1, h2, h3, h4, h5, h6, p, div, ul, li, hr {
   padding: 0;
   margin: 0; }
@@ -26,7 +29,7 @@ body {
 
 header {
   background: url("images/pattern.png") repeat top left;
-  height: 155px;
+  min-height: 155px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -79,6 +82,8 @@ div#navigation {
     right: -19px; }
   div#navigation ul.dropdown li {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); }
+  div#navigation #hamburgerMenu {
+    display: none; }
   div#navigation ul.dropdown {
     margin-left: 2.5%;
     list-style-type: none;
@@ -140,7 +145,8 @@ div#navigation {
     max-width: 930px;
     width: 93%;
     background-color: #d66c27;
-    margin: auto; }
+    margin: auto;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05); }
     #cover div img {
       width: 100%;
       height: auto; }
@@ -155,9 +161,11 @@ div#navigation {
     margin-bottom: 40px;
     padding: 0 3.5%; }
   #showcase #firstHr {
+    height: 0;
     border: 0;
     border-top: 4px solid #6b3b25;
-    width: 93%; }
+    width: 93%;
+    margin: auto; }
   #showcase h4 {
     text-transform: uppercase;
     font-size: 1.8em;
@@ -175,7 +183,8 @@ div#navigation {
   #showcase #secondHr {
     border: 0;
     border-top: 1px solid #6b3b25;
-    width: 93%; }
+    width: 93%;
+    margin: auto; }
   #showcase #works {
     width: 93%;
     margin: auto;
@@ -301,12 +310,13 @@ div#navigation {
 
 footer {
   background: url("images/pattern1.png") repeat top left;
-  height: 330px;
+  max-height: 330px;
+  height: auto;
   display: flex;
   flex-direction: column;
   position: relative; }
   footer #notsobottom {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     width: 94%;
@@ -315,7 +325,8 @@ footer {
       box-sizing: border-box;
       width: 33%;
       height: 240px;
-      padding-right: 5px; }
+      padding-right: 5px;
+      line-height: 2.1em; }
       footer #notsobottom div h2 {
         margin-top: 25px;
         color: #e09402;
@@ -359,6 +370,7 @@ footer {
       right: 20px;
       transform: rotate(3deg); }
   footer #pointbox {
+    cursor: grab;
     width: 46px;
     height: 28px;
     margin: -28px auto 0;

@@ -4,8 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Madison Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
- 	<link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Lato:300,400,700,900" rel="stylesheet"> 
+ 	<link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Lato:300,400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> 
 	<link href="large.css" rel="stylesheet" type="text/css" />
+	<link href="small.css" rel="stylesheet" media="(max-width: 700px)" type="text/css" />
+	<script src="jquery-3.1.1.js"></script>
 	<script src="javascript.js"></script>
 </head>
 
@@ -33,6 +37,9 @@
 		<div id="navigation">
 			<img src="images/angles.png" id="leftAngles">
 			<img src="images/anglesr.png" id="rightAngles">
+			<div id="hamburgerMenu">
+				<a href="#" class="openMenu"><span>MENU</span></a><a href="#" class="openMenu"><i class="material-icons">menu</i></a>
+			</div>
 			<ul class="dropdown">
 				<li>
 					<a href="#" id="firstMenuItem">Home</a>

@@ -44,12 +44,15 @@ div#navigation ul.dropdown {
   font-size: 1.2em;
   margin-left: 5px; }
   div#navigation ul.dropdown li {
+    width: 80%;
     position: relative; }
     div#navigation ul.dropdown li ul {
       position: absolute;
       left: 135px;
       top: 0;
       min-width: 160px; }
+      div#navigation ul.dropdown li ul li {
+        width: 100%; }
 
 #cover {
   padding: 4% 0; }

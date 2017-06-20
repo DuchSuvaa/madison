@@ -117,6 +117,8 @@ div#navigation {
         div#navigation ul.dropdown li ul li {
           line-height: 45px;
           text-shadow: none; }
+        div#navigation ul.dropdown li ul li:hover {
+          color: #e09402; }
 
 /* ukrywanie dropdown menu */
 .dropdown {
@@ -127,7 +129,7 @@ div#navigation {
     top: 100%;
     margin-left: -14px; }
 
-.dropdown li:hover {
+.dropdown > li:hover {
   background-color: #62493d; }
 
 .dropdown li:hover > ul {
